@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html class="full" lang="en">
-  <head>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
     <meta name="author" content="D'Ann Hart">
 
@@ -12,43 +13,125 @@
 
     <!-- end favicon code -->
 
-    <title>Rock, Paper, Scissors</title>
+    <title>Rock, Paper, Scissors Game</title>
 
       <!-- Bootstrap -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="assets/css/3-col-portfolio.css" rel="stylesheet">
 
-
-  <!--font embed -->
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script
+
+ <script
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
-  </head>
-<body> 
-<div class="container">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Rock, Paper Scissors</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <form class="navbar-form navbar-left" role="input">
+                <div class="form-group">
+                  <input type="text" id="playerName" class="form-control" placeholder="Enter your Name to Play...">
+                </div><!-- /form-group -->
+                <button class="btn btn-default" id="playButton" type="submit">Go!</button>
+            </form>
+                
+     
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+     <!-- Projects Row -->
+        <div class="row" id="gameRow">
+            <div class="col-sm-4 col-xs-6 portfolio-item">
+                <div id="p1Box">
+                    <div class="btn-group-vertical" id="p1Choices" role="group" aria-label="Player 1 Choices">
+                        <button type="button" id = "p1rock" class="btn btn-default">Rock</button>
+                        <button type="button" id = "p1paper" class="btn btn-default">Paper</button>
+                        <button type="button" id = "p1scissors" class="btn btn-default">Scissors</button>
+                    </div>
+                    
+                </div>
+                <h3 id="p1Name">Player 1</h3>
+                <p id="p1WinLoss">win: 0  loss: 0</p>
+            </div>
+
+            <div class="col-sm-4 col-sm-push-4 col-xs-6 portfolio-item">
+                 <div id="p2Box">
+                    <div class="btn-group-vertical" id="p2Choices" role="group" aria-label="Player 2 Choices">
+                        <button type="button" id = "p2rock" class="btn btn-default">Rock</button>
+                        <button type="button" id = "p2paper" class="btn btn-default">Paper</button>
+                        <button type="button" id = "p2scissors" class="btn btn-default">Scissors</button>
+                    </div>
+                </div>
+                <h3 id="p2Name">Player 2</h3>
+                <p id="p2WinLoss">win: 0  loss: 0</p>
+            </div>
+
+            <div class="col-sm-4 col-sm-pull-4 col-xs-12  portfolio-item">
+                <div id="winnerBox">
+                    <h3 id="message">Waiting on Player 1</h3>
+                </div>
+                <h3 id="gameStatus"></h3>
+                <p id="gameStatusMessage"></p>
+            </div>
 
 
-    <h1>Hello, world!</h1>
 
 
- </div> <!--End container-->
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-    <script src="assets/javascript/bootstrap.min.js"></script>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            
+        </div>
+
+
+        <hr>
+
+        <!-- Footer 
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+     
+        </footer>-->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="assets/javascript/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/javascript/bootstrap.min.js">
+    </script>
+
 <!-- Custom JavaScript -->
-   
 
-  </body>
+</body>
+
 </html>
